@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PTI</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h5 class="m-0 text-primary" style="font-family: Arial;">
+                <img class="img-fluid" src="img/um.jpg" alt="" width="40" height="40">
+                Edu Web
+            </h5>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link active">About</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="index.html" class="dropdown-item">PTI</a>
+                        <a href="homeweb.html" class="dropdown-item">Pemrograman Web</a>
+                        <a href="404.html" class="dropdown-item">Pemrograman Dasar</a>
+                    </div>
+                </div>
+            </div>
+            <a href="compiler.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">COMPILER</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Framework</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Materi Start -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-10">
+                <h6 class="section-title bg-white text-start text-primary pe-3">Materi</h6>
+
+                <h1>Definisi Framework Website</h1>
+                <p>Framework adalah kerangka kerja. Framework juga dapat diartikan sebagai kumpulan script
+                    (terutama class dan function) yang dapat membantu developer/programmer dalam menangani
+                    berbagai masalah-masalah dalam pemrograman seperti koneksi ke database, pemanggilan variabel,
+                    file,dll sehingga developer lebih fokus dan lebih cepat membangun aplikasi. Bisa juga dikatakan
+                    Framework adalah komponen pemrorgaman yang siap re-use kapans aja, sehingga programmer
+                    tidak harus membuat skrip yang sama untuk tugas yang sama. Misalkan saat anda membuat aplikasi
+                    web berbasis ajax yang setiap kali harus melakukan XMLHttpRequest, maka Xajax telah
+                    mempurmudah untuk anda dengan menciptakan sebuah objek khusus yang siap digunakan untuk
+                    operasi Ajax berbasis PHP. Itu adalah salah satu contoh kecil, selebihnya Framework jauh lebih
+                    luas dari itu.
+                </p>
+                <p>
+                    Secara sederhana bisa dijelaskan bahwa framework adalah kumpulan fungsi (libraries), maka
+                    seorang programmer tidak perlu lagi membuat fungsi-fungsi (biasanya disebut kumpulan library)
+                    dari awal, programmer tinggal memanggil kumpulan library atau fungsi yang sudah ada di dalam
+                    framerwork, tentunya cara menggunakan fungsi-fungsi itu sudah ditentukan oleh framework.
+                    Beberapa contoh fungsi-fungsi standar yang telah tersedia dalam suatu framework adalah fungsi
+                    paging, enkripsi, email, SEO, session, security, kalender, bahasa, manipulasi gambar, grafik, tabel
+                    bergaya zebra, validasi, upload, captcha, proteksi terhadap XSS(XSS filtering), template, kompresi,
+                    XML dan lain-lain.</p>
+                <p>
+                    Framework dapat mempercepat proses pengembangan, meningkatkan konsistensi kode, memastikan praktik terbaik diterapkan, dan memudahkan kolaborasi dalam tim pengembang.
+                </p>
+                <h1>Sejarah Singkat Framework Website</h1>
+                <p>
+                    Sejarah framework website dimulai pada akhir 1990-an dan awal 2000-an, ketika pengembangan web mulai berkembang pesat. Pada masa itu, pengembang sering kali menulis kode dari awal tanpa struktur yang jelas, yang mengakibatkan kesulitan dalam pemeliharaan dan pengembangan aplikasi yang lebih besar.
+                </p>
+                <p>
+                    Dengan meningkatnya kompleksitas aplikasi web, muncul kebutuhan untuk memiliki struktur yang lebih terorganisir. Framework pertama yang dikenal adalah Ruby on Rails, yang diluncurkan pada tahun 2005. Ruby on Rails memperkenalkan konsep <em>Convention over Configuration</em> dan <em>Don't Repeat Yourself (DRY)</em>, yang membantu pengembang untuk menulis kode yang lebih bersih dan efisien.
+                </p>
+                <p>
+                    Setelah keberhasilan Ruby on Rails, banyak framework lain muncul, seperti Django untuk Python, yang juga diluncurkan pada tahun 2005, dan ASP.NET untuk C#. Seiring waktu, framework JavaScript seperti AngularJS (dirilis pada tahun 2010) dan React (dirilis pada tahun 2013) menjadi populer, memungkinkan pengembang untuk membangun aplikasi web dinamis dan interaktif.
+                </p>
+                <p>
+                    Saat ini, framework website telah menjadi bagian integral dari pengembangan web modern, dengan banyak pilihan yang tersedia untuk berbagai bahasa pemrograman dan kebutuhan aplikasi. Framework membantu pengembang untuk mempercepat proses pengembangan, meningkatkan keamanan, dan menerapkan praktik terbaik dalam pengembangan aplikasi.
+                </p>
+                <br>
+                <h1>CSS - Bootstrap</h1>
+                <p>
+                    Bootstrap adalah framework CSS yang paling populer dan banyak digunakan dalam pengembangan front-end website. Dikembangkan oleh Twitter, Bootstrap menyediakan kumpulan komponen dan utilitas yang siap pakai untuk mempercepat proses pembuatan tampilan yang modern, responsif, dan konsisten di berbagai perangkat.
+                </p>
+                <p>
+                    Bootstrap menawarkan sistem grid yang fleksibel, komponen UI seperti tombol, navigasi, formulir, modal, dan masih banyak lagi. Semua komponen ini dirancang untuk mudah digunakan dengan kelas-kelas CSS yang sudah ditentukan, sehingga developer tidak perlu menulis banyak kode CSS dari awal.
+                </p>
+                </code></pre>
+                <h5>Contoh Struktur Folder Bootstrap (Front-end saja)</h5>
+                    <pre><code>
+                bootstrap_project/
+                │
+                ├── css/                   # File CSS termasuk bootstrap.min.css
+                ├── js/                    # JavaScript dan bootstrap.bundle.min.js
+                ├── images/                # Gambar yang digunakan
+                ├── index.html             # Halaman web utama
+                └── assets/                # Aset tambahan (font, ikon)
+                    </code></pre>
+                
+                <h5>Keunggulan Bootstrap</h5>
+                <ul>
+                    <li>Mudah dipelajari dan digunakan.</li>
+                    <li>Menghemat waktu dalam membangun UI yang responsif.</li>
+                    <li>Dukungan yang luas dari komunitas dan dokumentasi lengkap.</li>
+                    <li>Browser compatibility yang baik.</li>
+                </ul>
+                <!-- Materi Start -->
+
+                <h5>Penerapan Bootstrap </h5>
+               
+
+                <h5>1. Tata Letak Responsif dengan Sistem Grid</h5>
+                <p>Bootstrap menggunakan sistem grid 12 kolom yang memudahkan pengaturan layout yang fleksibel dan responsif. Contohnya:</p>
+                <pre><code>&lt;div class="container"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col-md-6"&gt;Kolom 1&lt;/div&gt;
+                    &lt;div class="col-md-6"&gt;Kolom 2&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                </code></pre>
+                <p>
+                    Pada layar sedang ke atas, akan ada dua kolom berukuran sama, sementara pada layar kecil, kolom akan menumpuk secara vertikal otomatis.
+                </p>
+
+                <h5>2. Membuat Navigasi dengan Navbar</h5>
+                <p>Navbar Bootstrap responsif dan mudah dikostumisasi:</p>
+                <pre><code>&lt;nav class="navbar navbar-expand-lg navbar-dark bg-dark"&gt;
+                &lt;a class="navbar-brand" href="#"&gt;Logo&lt;/a&gt;
+                &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"&gt;
+                    &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;div class="collapse navbar-collapse" id="navbarNav"&gt;
+                    &lt;ul class="navbar-nav"&gt;
+                    &lt;li class="nav-item"&gt;&lt;a class="nav-link active" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;/nav&gt;
+                </code></pre>
+
+                <h5>3. Membuat Tombol dan Komponen UI</h5>
+                <p>Contoh tombol dengan berbagai varian:</p>
+                <pre><code>&lt;button type="button" class="btn btn-primary"&gt;Tombol Utama&lt;/button&gt;
+                &lt;button type="button" class="btn btn-success"&gt;Tombol Sukses&lt;/button&gt;
+                &lt;button type="button" class="btn btn-danger"&gt;Tombol Berbahaya&lt;/button&gt;
+                </code></pre>
+
+                <h5>4. Membuat Formulir yang Stylish</h5>
+                <p>Bootstrap membuat styling form menjadi mudah dan konsisten:</p>
+                <pre><code>&lt;form&gt;
+                &lt;div class="mb-3"&gt;
+                    &lt;label for="email" class="form-label"&gt;Email address&lt;/label&gt;
+                    &lt;input type="email" class="form-control" id="email" placeholder="name@example.com"&gt;
+                &lt;/div&gt;
+                &lt;div class="mb-3"&gt;
+                    &lt;label for="password" class="form-label"&gt;Password&lt;/label&gt;
+                    &lt;input type="password" class="form-control" id="password"&gt;
+                &lt;/div&gt;
+                &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+                &lt;/form&gt;
+                </code></pre>
+
+                            <h5>5. Responsive Images</h5>
+                            <p>Bootstrap menyediakan kelas utility untuk membuat gambar responsif:</p>
+                            <pre><code>&lt;img src="gambar.jpg" class="img-fluid" alt="Deskripsi gambar"&gt;
+                </code></pre>
+
+                <h5>6. Menggunakan Modal (Popup)</h5>
+                <p>Modal digunakan untuk menampilkan konten pop-up interaktif:</p>
+                <pre><code><!-- Tombol trigger -->
+                &lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"&gt;
+                Buka Modal
+                &lt;/button&gt;
+
+                    <!-- Modal -->
+                    &lt;div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+                    &lt;div class="modal-dialog"&gt;
+                        &lt;div class="modal-content"&gt;
+                        &lt;div class="modal-header"&gt;
+                            &lt;h5 class="modal-title" id="exampleModalLabel"&gt;Modal Title&lt;/h5&gt;
+                            &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt;&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div class="modal-body"&gt;
+                            Konten modal...
+                        &lt;/div&gt;
+                        &lt;div class="modal-footer"&gt;
+                            &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gt;Tutup&lt;/button&gt;
+                            &lt;button type="button" class="btn btn-primary"&gt;Simpan Perubahan&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                    </code></pre>
+
+                    <h5>7. Responsive Utilities</h5>
+                    <p>Bootstrap menyediakan banyak kelas utilitas untuk kontrol margin, padding, visibilitas, dan positioning yang responsif. Misalnya:</p>
+                    <pre><code>&lt;div class="d-none d-md-block"&gt;Hanya tampil di layar medium ke atas&lt;/div&gt;
+                    &lt;div class="p-3 mb-2 bg-primary text-white"&gt;Kotak dengan padding dan warna latar belakang&lt;/div&gt;
+                </code></pre>
+            </div>
+        </div>
+    </div>
+    <!-- Materi End -->
+<!-- Materi Start -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-10">
+
+            <h6 class="section-title bg-white text-start text-primary pe-3">Materi</h6>
+
+            <h1>JavaScript - AngularJS</h1>
+            <p>
+                AngularJS adalah framework JavaScript open-source yang dikembangkan oleh Google untuk membangun aplikasi web dinamis dengan struktur yang terorganisir. AngularJS menggunakan arsitektur Model-View-Controller (MVC) yang memisahkan logika aplikasi, tampilan, dan data, sehingga memudahkan pengelolaan kode pada proyek web yang kompleks.
+            </p>
+            <p>
+                AngularJS dikembangkan oleh Misko Hevery dan dirilis pada tahun 2010. AngularJS dirancang untuk menyederhanakan proses pembuatan aplikasi web kompleks dengan menyediakan framework lengkap yang memungkinkan developer membangun aplikasi single-page (SPA) yang responsif. Pada tahun 2016, Google merilis Angular versi terbaru (disebut Angular 2+), yang merupakan perombakan penuh dari AngularJS.
+            </p>
+
+            <h5>Fitur Utama AngularJS</h5>
+            <ul>
+                <li><strong>Data Binding Dua Arah (Two-Way Data Binding):</strong> Perubahan data di model langsung tercermin di tampilan (view) dan sebaliknya.</li>
+                <li><strong>Dependency Injection:</strong> Memudahkan pengelolaan dependensi antar komponen.</li>
+                <li><strong>Directive:</strong> Ekstensi HTML untuk membuat elemen baru, atribut, dan perilaku khusus.</li>
+                <li><strong>Templates:</strong> HTML dengan markup tambahan yang di-binding dengan data model.</li>
+                <li><strong>Routing:</strong> Membuat aplikasi single-page (SPA) yang dapat berpindah halaman tanpa reload.</li>
+                <li><strong>Modularitas:</strong> Kode bisa diorganisasi menjadi modul-modul yang mudah dikelola.</li>
+            </ul>
+            
+            
+            <h5>Cara Memulai dengan AngularJS</h5>
+            <p>Untuk menggunakan AngularJS, Anda dapat menyertakan pustaka via CDN dengan menambahkan script berikut di halaman HTML Anda:</p>
+            <pre><code>
+                &lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"&gt;&lt;/script&gt;
+            </code></pre>
+
+            <h5>Contoh Struktur Folder Angular (JavaScript Frontend)</h5>
+                <pre><code>
+            angular_project/
+            │
+            ├── e2e/                   # End-to-end tests
+            ├── node_modules/          # Package node yang diinstall
+            ├── src/
+            │   ├── app/               # Komponen, modul, service
+            │   ├── assets/            # Gambar dan aset statis
+            │   ├── environments/      # Pengaturan environment
+            │   ├── index.html         # Halaman HTML utama
+            │   └── main.ts            # Entry point aplikasi
+            ├── angular.json           # Konfigurasi Angular CLI
+            ├── package.json           # Dependensi dan script npm
+            └── tsconfig.json          # Konfigurasi TypeScript
+                </code></pre>
+            <h5>Contoh Sederhana AngularJS</h5>
+            <p>Berikut contoh aplikasi kecil yang menampilkan pesan dinamis dengan AngularJS:</p>
+            <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html ng-app="myApp"&gt;
+            &lt;head&gt;
+                &lt;title&gt;AngularJS Example&lt;/title&gt;
+                &lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"&gt;&lt;/script&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+
+            &lt;div ng-controller="myController"&gt;
+                &lt;h5&gt;{{ greeting }}&lt;/h5&gt;
+                &lt;input type="text" ng-model="greeting"&gt;
+            &lt;/div&gt;
+
+            &lt;script&gt;
+                angular.module('myApp', [])
+                .controller('myController', function($scope) {
+                    $scope.greeting = "Halo, AngularJS!";
+                });
+            &lt;/script&gt;
+
+            &lt;/body&gt;
+            &lt;/html&gt;
+            </code></pre>
+
+            <h5>Penjelasan</h5>
+            <ul>
+                <li><code>ng-app</code> mendefinisikan aplikasi AngularJS.</li>
+                <li><code>ng-controller</code> mendefinisikan kontroler yang mengatur scope dalam elemen tersebut.</li>
+                <li><code>{{ greeting }}</code> menampilkan data yang ada di scope secara dinamis (data binding).</li>
+                <li><code>ng-model</code> mengikat input teks ke variabel <code>greeting</code> sehingga perubahan langsung tercermin di tampilan.</li>
+            </ul>
+
+            <h3>Panduan AngularJS</h3>
+
+            <h5>1. Setup Awal</h5>
+            <h6>a. Menyertakan AngularJS</h6>
+            <pre><code class="language-html">&lt;!-- Gunakan CDN --&gt;
+                &lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"&gt;&lt;/script&gt;
+
+                &lt;!-- Atau file lokal --&gt;
+                &lt;script src="js/angular.js"&gt;&lt;/script&gt;</code></pre>
+
+                            <h6>b. Struktur Dasar</h6>
+                            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+                &lt;html ng-app="myApp"&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Aplikasi AngularJS&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;div ng-controller="MyController"&gt;
+                        {{ pesan }}
+                    &lt;/div&gt;
+                    
+                    &lt;script&gt;
+                        var app = angular.module('myApp', []);
+                        app.controller('MyController', function($scope) {
+                            $scope.pesan = "Halo AngularJS!";
+                        });
+                    &lt;/script&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;</code></pre>
+
+            <h5>2. Data Binding</h5>
+            <pre><code class="language-html">&lt;!-- Two-way binding --&gt;
+                &lt;input type="text" ng-model="nama"&gt;
+                &lt;p&gt;Halo, {{nama}}!&lt;/p&gt;
+
+                &lt;!-- One-way binding --&gt;
+                &lt;p ng-bind="nama"&gt;&lt;/p&gt;</code></pre>
+
+            <h5>3. Directives Utama</h5>
+            <pre><code class="language-html">&lt;!-- ng-repeat untuk perulangan --&gt;
+                &lt;ul&gt;
+                    &lt;li ng-repeat="item in daftarItem"&gt;
+                        {{item.nama}} - {{item.harga | currency}}
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+
+                &lt;!-- ng-click untuk event --&gt;
+                &lt;button ng-click="tambahItem()"&gt;Tambah&lt;/button&gt;
+
+                &lt;!-- ng-show/ng-hide untuk tampilan --&gt;
+                &lt;p ng-show="tampilkanPesan"&gt;Pesan tersembunyi&lt;/p&gt;</code></pre>
+
+            <h5>4. Form Validation</h5>
+            <pre><code class="language-html">&lt;form name="myForm"&gt;
+                &lt;input type="email" name="email" ng-model="user.email" required&gt;
+                &lt;span ng-show="myForm.email.$error.required"&gt;Email wajib diisi&lt;/span&gt;
+                &lt;span ng-show="myForm.email.$error.email"&gt;Format email salah&lt;/span&gt;
+                
+                &lt;button ng-disabled="myForm.$invalid"&gt;Submit&lt;/button&gt;
+            &lt;/form&gt;</code></pre>
+
+            <h5>5. HTTP Service</h5>
+            <pre><code class="language-javascript">app.controller('DataController', function($scope, $http) {
+                // GET request
+                $http.get('/api/data')
+                    .then(function(response) {
+                        $scope.data = response.data;
+                    });
+                
+                // POST request
+                $scope.kirimData = function() {
+                    $http.post('/api/save', $scope.formData)
+                        .then(function(response) {
+                            alert('Data tersimpan!');
+                        });
+                };
+            });</code></pre>
+
+            <h5>6. Routing dengan ngRoute</h5>
+            <pre><code class="language-html">&lt;!-- Sertakan angular-route.js --&gt;
+                &lt;script src="angular-route.min.js"&gt;&lt;/script&gt;
+
+                &lt;!-- Tempat menampilkan view --&gt;
+                &lt;div ng-view&gt;&lt;/div&gt;</code></pre>
+
+            <pre><code class="language-javascript">// Konfigurasi routing
+                app.config(function($routeProvider) {
+                    $routeProvider
+                        .when('/', {
+                            templateUrl: 'views/home.html',
+                            controller: 'HomeController'
+                        })
+                        .when('/about', {
+                            templateUrl: 'views/about.html',
+                            controller: 'AboutController'
+                        })
+                        .otherwise('/');
+                });</code></pre>
+
+                            <h5>7. Custom Directive</h5>
+                            <pre><code class="language-javascript">app.directive('helloWorld', function() {
+                    return {
+                        restrict: 'E',
+                        template: '&lt;h1&gt;Hello World!&lt;/h1&gt;'
+                    };
+                });</code></pre>
+
+                            <pre><code class="language-html">&lt;!-- Penggunaan --&gt;
+                &lt;hello-world&gt;&lt;/hello-world&gt;</code></pre>
+
+            <h5>8. Filter Kustom</h5>
+                            <pre><code class="language-javascript">app.filter('reverse', function() {
+                    return function(text) {
+                        return text.split('').reverse().join('');
+                    };
+                });</code></pre>
+
+                            <pre><code class="language-html">&lt;!-- Penggunaan --&gt;
+                &lt;p&gt;{{ 'AngularJS' | reverse }}&lt;/p&gt; &lt;!-- Output: SJralugnA --&gt;</code></pre>
+
+            
+            <h5>Perbandingan Singkat AngularJS dan Angular (2+)</h5>
+            <ul>
+                <li><strong>AngularJS</strong> (versi 1.x) berbasis JavaScript dan menggunakan arsitektur MVC.</li>
+                <li><strong>Angular</strong> (versi 2 dan setelahnya) berbasis TypeScript, mendukung komponen dan lebih modern serta performa lebih baik.</li>
+                <li>Angular versi terbaru memiliki learning curve yang lebih curam tapi lebih powerful untuk aplikasi besar.</li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<!-- laravel Start -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-10">
+  
+       
+        <h1>PHP - Laravel</h1>
+  
+        <p>
+          Laravel adalah framework PHP open-source yang dirancang untuk mempermudah pengembangan aplikasi web dengan sintaks yang elegan dan ekspresif. Laravel menyediakan berbagai fitur modern yang membantu pengembang membangun aplikasi yang scalable, aman, dan mudah dipelihara.
+        </p>
+        <p>
+            Laravel dibuat oleh Taylor Otwell dan pertama kali dirilis pada tahun 2011 sebagai alternatif modern bagi framework PHP yang sudah ada. Sejak itu, Laravel tumbuh pesat dan menjadi salah satu framework PHP paling populer di dunia, dengan komunitas besar dan ekosistem paket yang luas.
+        </p>
+  
+        <h5>Fitur Utama Laravel</h5>
+        <ul>
+          <li><strong>Routing yang Mudah:</strong> Laravel menawarkan cara yang sederhana untuk mendefinisikan rute aplikasi dan mengelola URL secara efisien.</li>
+          <li><strong>ORM Eloquent:</strong> Object Relational Mapping (ORM) yang kuat memudahkan interaksi dengan database menggunakan model berbasis objek.</li>
+          <li><strong>Migrasi Database:</strong> Memungkinkan pengelolaan skema database secara versi dan terstruktur.</li>
+          <li><strong>Blade Templating:</strong> Sistem templating yang bersih dan mudah digunakan untuk membuat tampilan.</li>
+          <li><strong>Middleware:</strong> Menyaring HTTP request masuk untuk keperluan autentikasi, logging, dan lainnya.</li>
+          <li><strong>Sistem Otentikasi:</strong> Scaffold otentikasi lengkap untuk login, registrasi, dan manajemen pengguna.</li>
+          <li><strong>Queue & Event:</strong> Mendukung pemrosesan tugas latar belakang dan event-driven programming.</li>
+        </ul>
+  
+        <h5>Cara Memulai Proyek Laravel</h5>
+        <p>Untuk membuat aplikasi Laravel baru, Anda harus menginstal <code>Composer</code> yang merupakan dependency manager PHP. Kemudian jalankan perintah berikut di terminal:</p>
+        <pre><code>composer create-project --prefer-dist laravel/laravel nama_proyek</code></pre>
+        <p>Perintah ini akan mengunduh Laravel dan membuat folder proyek baru dengan nama <code>nama_proyek</code>.</p>
+  
+        <h5>Membuat Route dan Controller Sederhana</h5>
+        <p>Contoh mendefinisikan route di <code>routes/web.php</code>:</p>
+        <pre><code>Route::get('/', function () {
+                return view('welcome');
+            });
+            </code></pre>
+                    <p>Atau menggunakan Controller:</p>
+                    <pre><code>php artisan make:controller HomeController
+            </code></pre>
+                    <p>Setelah membuat controller, tambahkan fungsi dan rute:</p>
+                    <pre><code>// routes/web.php
+            Route::get('/home', [HomeController::class, 'index']);
+            
+            // app/Http/Controllers/HomeController.php
+            public function index() {
+                return view('home');
+            }
+            </code></pre>
+  
+            <h5>Mengakses Database dengan Eloquent</h5>
+            <p>Contoh Model User yang terhubung ke tabel users:</p>
+            <pre><code>php artisan make:model User
+            </code></pre>
+                    <p>Contoh menggunakan model untuk mengambil data:</p>
+                    <pre><code>// Di Controller
+            $users = User::all();
+            return view('user.index', compact('users'));
+            </code></pre>
+            
+                    <h5>Blade Templating</h5>
+                    <p>Laravel menggunakan engine Blade untuk membuat template HTML dengan sintaks sederhana:</p>
+                    <pre><code>&lt;!-- resources/views/user/index.blade.php --&gt;
+                &lt;h1&gt;Daftar Pengguna&lt;/h1&gt;
+                &lt;ul&gt;
+                @foreach ($users as $user)
+                &lt;li&gt;{{ $user->name }} ({{ $user->email }})&lt;/li&gt;
+                @endforeach
+                &lt;/ul&gt;
+                </code></pre>
+                
+                        <h5>Artisan CLI</h5>
+                        <p>Laravel menyediakan <code>Artisan</code>, command line tool untuk otomatisasi seperti membuat controller, migrasi, dan menjalankan server lokal:</p>
+                        <pre><code>php artisan serve
+                    php artisan make:controller NamaController
+                    php artisan migrate
+                </code></pre>
+             
+                <h6 class="section-title bg-white text-start text-primary pe-3">Materi</h6>
+        
+                <h3>Panduan Laravel</h3>
+        
+                <p>
+                Laravel sebagai framework PHP modern memiliki banyak fitur yang mempermudah pengembangan aplikasi web, mulai dari routing, pengelolaan basis data, blade templating, hingga sistem autentikasi. Berikut ini beberapa contoh penerapan Laravel yang umum digunakan dalam proyek.
+                </p>
+        
+                <h5>1. Membuat Project Baru</h5>
+                <p>Gunakan Composer untuk membuat project Laravel baru:</p>
+                <pre><code>composer create-project --prefer-dist laravel/laravel nama_proyek
+        </code></pre>
+        
+                <h5>2. Menjalankan Server Development</h5>
+                <pre><code>cd nama_proyek
+        php artisan serve
+        </code></pre>
+                <p>Server akan berjalan di <code>http://localhost:8000</code>.</p>
+        
+                <h5>3. Membuat Route dan Controller</h5>
+                <p>Mendefinisikan route di <code>routes/web.php</code>:</p>
+                <pre><code>Route::get('/halo', function () {
+            return "Halo dari Laravel!";
+        });
+        </code></pre>
+                <p>Atau membuat controller dengan artisan:</p>
+                <pre><code>php artisan make:controller HaloController
+        </code></pre>
+                <p>Menambahkan method dan route:</p>
+                <pre><code>// app/Http/Controllers/HaloController.php
+        public function tampil() {
+            return view('halo'); // mengarah ke resources/views/halo.blade.php
+        }
+        
+        // routes/web.php
+        Route::get('/halo', [HaloController::class, 'tampil']);
+        </code></pre>
+        
+                <h5>4. Membuat View dengan Blade</h5>
+                <p>Membuat file <code>resources/views/halo.blade.php</code>:</p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;title&gt;Halaman Halo&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Selamat datang di Laravel!&lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        </code></pre>
+        
+                <h5>5. Pengelolaan Database dengan Migration</h5>
+                <p>Membuat migrasi tabel baru:</p>
+                <pre><code>php artisan make:migration create_posts_table
+        </code></pre>
+                <p>Mengedit file migrasi di <code>database/migrations/</code> untuk membuat skema tabel</p>
+                <pre><code>Schema::create('posts', function (Blueprint $table) {
+            $table->id();
+            $table->string('judul');
+            $table->text('konten');
+            $table->timestamps();
+        });
+        </code></pre>
+                <p>Menjalankan migrasi:</p>
+                <pre><code>php artisan migrate
+        </code></pre>
+        
+                <h5>6. Membuat Model dan Menggunakan Eloquent ORM</h5>
+                <pre><code>php artisan make:model Post
+        </code></pre>
+                <p>Contoh mengambil semua data posts di controller:</p>
+                <pre><code>
+        use App\Models\Post;
+        
+        $posts = Post::all();
+        return view('posts.index', compact('posts'));
+        </code></pre>
+        
+                <h5>7. Sistem Autentikasi</h5>
+                <p>Laravel menyediakan paket Jetstream dan Breeze untuk implementasi autentikasi secara cepat dan aman. Berikut perintah untuk menginstall Breeze sebagai contoh:</p>
+                <pre><code>composer require laravel/breeze --dev
+        php artisan breeze:install
+        npm install && npm run dev
+        php artisan migrate
+        </code></pre>
+                <p>Setelah instalasi, Anda langsung mendapatkan fitur login, registrasi, reset password, dan lainnya.</p>
+        
+                <h5>8. Middleware dan Routing Group</h5>
+                <p>Contoh penerapan middleware untuk proteksi route:</p>
+                <pre><code>Route::middleware(['auth'])->group(function () {
+            Route::get('/dashboard', function () {
+                return view('dashboard');
+            });
+        });
+        </code></pre>
+       <h3>Perbandingan Laravel dan CodeIgniter</h3>
+  
+        <p>
+          Laravel dan CodeIgniter (CI) adalah dua framework PHP yang populer digunakan untuk pengembangan aplikasi web. Meskipun keduanya memiliki tujuan yang sama, yaitu mempermudah pengembangan aplikasi, mereka memiliki perbedaan signifikan dalam arsitektur, fitur, dan penggunaan. Berikut adalah perbandingan antara Laravel dan CodeIgniter.
+        </p>
+  
+        <h5>1. Arsitektur</h5>
+        <ul>
+          <li><strong>Laravel:</strong> Menggunakan arsitektur Model-View-Controller (MVC) yang memisahkan logika aplikasi, tampilan, dan data. Ini membuat kode lebih terstruktur dan mudah dipelihara.</li>
+          <li><strong>CodeIgniter:</strong> Juga menggunakan pola MVC, tetapi lebih fleksibel dan tidak terlalu ketat dalam penerapan arsitektur. Ini memungkinkan pengembang untuk lebih bebas dalam mengatur struktur aplikasi.</li>
+        </ul>
+  
+        <h5>2. Fitur</h5>
+        <ul>
+          <li><strong>Laravel:</strong>
+            <ul>
+              <li>ORM Eloquent untuk interaksi database yang lebih mudah.</li>
+              <li>Routing yang lebih canggih dan dukungan RESTful.</li>
+              <li>Middleware untuk pengelolaan request dan autentikasi.</li>
+              <li>Blade templating engine yang kuat.</li>
+              <li>Fitur built-in untuk autentikasi, pengelolaan sesi, dan pengujian.</li>
+            </ul>
+          </li>
+          <li><strong>CodeIgniter:</strong>
+            <ul>
+              <li>Lebih ringan dan cepat, cocok untuk aplikasi kecil hingga menengah.</li>
+              <li>Pengaturan yang lebih sederhana dan mudah dipahami.</li>
+              <li>Fitur dasar untuk routing, database, dan session management.</li>
+              <li>Lebih sedikit fitur built-in dibandingkan Laravel, tetapi lebih mudah untuk di-custom.</li>
+            </ul>
+          </li>
+        </ul>
+  
+        <h5>3. Kemudahan Penggunaan</h5>
+        <ul>
+          <li><strong>Laravel:</strong> Memiliki kurva belajar yang lebih curam karena banyaknya fitur dan konsep yang harus dipahami, seperti dependency injection, service providers, dan lain-lain.</li>
+          <li><strong>CodeIgniter:</strong> Lebih mudah dipelajari bagi pemula, dengan dokumentasi yang jelas dan struktur yang sederhana.</li>
+        </ul>
+  
+        <h5>4. Komunitas dan Dukungan</h5>
+        <ul>
+          <li><strong>Laravel:</strong> Memiliki komunitas yang besar dan aktif, dengan banyak tutorial, forum, dan sumber daya online. Dokumentasi resmi sangat lengkap.</li>
+          <li><strong>CodeIgniter:</strong> Juga memiliki komunitas yang baik, tetapi tidak sebesar Laravel. Dokumentasi cukup baik, tetapi tidak sekomprehensif Laravel.</li>
+        </ul>
+  
+        <h5>5. Kinerja</h5>
+        <ul>
+          <li><strong>Laravel:</strong> Meskipun lebih kaya fitur, Laravel bisa lebih berat dan memerlukan lebih banyak sumber daya server, terutama untuk aplikasi besar.</li>
+          <li><strong>CodeIgniter:</strong> Lebih ringan dan cepat, sehingga lebih cocok untuk aplikasi yang memerlukan performa tinggi dengan sumber daya terbatas.</li>
+        </ul>
+  
+        <h5>6. Penggunaan</h5>
+        <ul>
+          <li><strong>Laravel:</strong> Cocok untuk aplikasi besar dan kompleks yang memerlukan banyak fitur dan skalabilitas.</li>
+          <li><strong>CodeIgniter:</strong> Ideal untuk aplikasi kecil hingga menengah, prototyping, dan pengembangan yang cepat.</li>
+        </ul>
+  
+        <p>
+          Pilihan antara Laravel dan CodeIgniter tergantung pada kebutuhan proyek dan preferensi pengembang. Jika Anda memerlukan framework yang kaya fitur dan siap untuk belajar, Laravel adalah pilihan yang tepat. Namun, jika Anda mencari sesuatu yang lebih sederhana dan cepat untuk aplikasi kecil, CodeIgniter bisa menjadi pilihan yang lebih baik.
+        </p>
+
+        <h5>Referensi</h5>
+            <ul>
+                <li><a href="https://angularjs.org/" target="_blank" rel="noopener">Website Resmi AngularJS</a></li>
+                <li><a href="https://docs.angularjs.org/guide" target="_blank" rel="noopener">Dokumentasi AngularJS</a></li>
+                <li><a href="https://tutorialspoint.com/angularjs/" target="_blank" rel="noopener">Tutorial AngularJS di TutorialsPoint</a></li>
+                <li><a href="https://laravel.com/docs" target="_blank" rel="noopener">Dokumentasi Resmi Laravel</a></li>
+                <li><a href="https://laracasts.com" target="_blank" rel="noopener">Laracasts - Tutorial Laravel</a></li>
+                <li><a href="https://www.tutorialspoint.com/laravel/index.htm" target="_blank" rel="noopener">Tutorialspoint Laravel</a></li>
+            </ul>
+              
+        </div>
+    </div>
+</div>
+  <!-- laravel End -->
+  
+<!-- Materi End -->
+
+
+
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Bagian 1: Quick Link -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="komputer.html">Konsep Komputer</a>
+                    <a class="btn btn-link" href="sistem.html">Sistem Informasi</a>
+                    <a class="btn btn-link" href="mobile.html">Mobile Learning</a>
+                    <a class="btn btn-link" href="superhighway.html">Information Superhighway</a>
+                    <a class="btn btn-link" href="etika.html">Etika Teknologi Informasi</a>
+                </div>
+                <!-- Bagian 2: Contact -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>JL AR HAKIM</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+62555511321</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Bagian 3: Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Jika terdapat Kendala Bisa Menghubungi Kami.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Baris Bawah -->
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Kelompok 6</a>, All Right Reserved.
+                        
+                        Designed By Kelompok 6
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

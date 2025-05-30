@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PTI</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h3 class="m-0 text-primary" style="font-family: Arial;">
+                <img class="img-fluid" src="img/um.jpg" alt="" width="40" height="40">
+                Edu Web
+            </h3>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link active">About</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="index.html" class="dropdown-item">PTI</a>
+                        <a href="homeweb.html" class="dropdown-item">Pemrograman Web</a>
+                        <a href="404.html" class="dropdown-item">Pemrograman Dasar</a>
+                    </div>
+                </div>
+            </div>
+            <a href="compiler.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">COMPILER</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Server Side</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Materi Start -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-10">
+                <h6 class="section-title bg-white text-start text-primary pe-3 ">Materi</h6>
+                <h1 class="mb-4">Apa itu Server Side Programming?</h1>
+                <p>Server side programming adalah teknik pemrograman dimana logika aplikasi berada di server. Ketika pengguna melakukan permintaan ke server, server akan memproses permintaan tersebut, melakukan tugas yang diperlukan, dan mengirimkan hasilnya kembali ke klien.</p>
+
+                <hr/> <br>
+
+                <h3> Bahasa Pemrograman Server Side</h3>
+
+                <p>Bahasa pemrograman server side adalah bahasa pemrograman yang dijalankan di sisi server untuk memproses logika aplikasi sebelum mengirimkan hasilnya ke client (biasanya browser). Berbeda dengan bahasa pemrograman client side yang dijalankan di browser, server side berjalan di komputer server.</p>
+
+                <h3>Contoh Bahasa Pemrograman Server Side Populer</h3>
+                <div>
+                    <ul>
+                    <li><strong>PHP</strong> – Bahasa scripting yang sudah lama dipakai untuk pengembangan web dinamis.</li>
+                    <li><strong>Python</strong> – Dengan framework seperti Django dan Flask, sangat populer untuk aplikasi web server side.</li>
+                    <li><strong>JavaScript (Node.js)</strong> – Ekstensi JavaScript agar bisa berjalan di server, sangat populer dan fleksibel.</li>
+                    <li><strong>Ruby</strong> – Dengan framework Ruby on Rails, dikenal untuk pengembangan web cepat.</li>
+                    <li><strong>Java</strong> – Sering digunakan untuk aplikasi enterprise dan aplikasi web besar menggunakan framework seperti Spring.</li>
+                    </ul>
+                </div>
+                <p>Bahasa-bahasa pemrograman diatas memiliki karakteristik dan kekuatan masing-masing, yang dapat digunakan sesuai kebutuhan aplikasi dan pengembang.</p>
+
+                <h3>Kelebihan Bahasa Pemrograman Server Side</h3>
+                <ul>
+                    <li>Mengelola dan menyimpan data secara aman di server.</li>
+                    <li>Membuat halaman web dinamis yang disesuaikan dengan pengguna.</li>
+                    <li>Mengelola autentikasi dan otorisasi pengguna.</li>
+                    <li>Berinteraksi dengan database, memproses data dan bisnis logic.</li>
+                    <li>Melindungi kode sumber dan rahasia logika dari pengguna.</li>
+                </ul>
+                <h3>Kekurangan Bahasa Pemrograman Server Side</h3>
+                <ul>
+                    <li>Ketergantungan pada server.</li>
+                    <li>Kurang fleksibel dibanding client server</li>
+                </ul>
+
+                <h3>Pemrograman Server Side</h3>
+
+                <p>Pemrograman server side adalah proses pengembangan aplikasi web di mana logika dan pemrosesan data dilakukan di sisi server. Dalam arsitektur web, server bertanggung jawab untuk menangani permintaan dari klien (seperti browser) dan mengirimkan respons yang sesuai. Pemrograman server side memungkinkan pengembang untuk membuat aplikasi yang dinamis, interaktif, dan mampu mengelola data dengan efisien.</p>
+                <p>Pemrograman server side adalah proses pemrograman yang dijalankan di sisi server untuk menangani permintaan (request) dari client, memprosesnya, dan mengirimkan respons kembali. Proses ini melibatkan backend logic seperti pengolahan data, interaksi dengan database, dan rendering halaman web yang akan dikirimkan.</p>
+
+                <h3>Cara Kerja Pemrograman Server Side</h3>
+                <ol>
+                    <li>Client (browser) mengirim permintaan HTTP ke server, misalnya untuk membuka halaman.</li>
+                    <li>Server menerima permintaan dan menjalankan kode program server side.</li>
+                    <li>Server memproses permintaan, misalnya membaca data dari database, menjalankan logika bisnis.</li>
+                    <li>Server membangun respons berupa halaman HTML, JSON, atau format lain.</li>
+                    <li>Server mengirimkan respons ke client.</li>
+                    <li>Client menerima respons dan menampilkan hasilnya.</li>
+                </ol>
+
+                <div class="note">
+                <strong>Catatan:</strong> Komunikasi antara client dan server biasanya menggunakan protokol HTTP atau HTTPS.
+                </div>
+
+                <h3>Contoh Kode Program Server Side: Node.js dengan Express</h3>
+
+                <p>Berikut contoh sederhana membuat server HTTP dengan Node.js dan framework Express yang melayani permintaan klien dan mengirimkan respons:</p>
+
+                <pre><code>const express = require('express');
+                    const app = express();
+                    const PORT = 3000;
+
+                    // Endpoint root
+                    app.get('/', (req, res) =&gt; {
+                    res.send('&lt;h1&gt;Halo dari server Node.js!&lt;/h1&gt;');
+                    });
+
+                    // Jalankan server
+                    app.listen(PORT, () =&gt; {
+                    console.log(`Server berjalan di http://localhost:${PORT}`);
+                    });
+                </code></pre>
+
+                <p>Penjelasan:</p>
+                <ul>
+                    <li>Kita buat server dengan memanggil <code>express()</code></li>
+                    <li>Mendefinisikan endpoint '/' untuk menerima GET request dan mengirimkan konten HTML sebagai respons.</li>
+                    <li>Server berjalan dan mendengarkan di port 3000.</li>
+                </ul>
+
+                <p>Anda bisa menjalankan kode ini dengan menyimpan di <code>index.js</code>, kemudian di terminal jalankan:</p>
+
+                <pre><code>node index.js</code></pre>
+
+                <p>Setelah server berjalan, buka <code>http://localhost:3000</code> di browser untuk melihat hasilnya.</p>
+                <br>
+                <h3> Web Server</h3>
+                <p>Web server adalah sebuah software (perangkat lunak) yang memberikan layanan berupa data. Berfungsi untuk menerima permintaan HTTP atau HTTPS dari klien atau kita kenal dengan web browser (Chrome, Firefox). Selanjutnya ia akan mengirimkan respon atas permintaan tersebut kepada client dalam bentuk halaman web.</p>                
+                <h3>Fungsi Web Server</h3>
+                <ul>
+                    <li>Mendengarkan permintaan dari client pada port tertentu (biasanya port 80 untuk HTTP atau port 443 untuk HTTPS).</li>
+                    <li>Mengirimkan konten statis (file HTML, CSS, JavaScript, gambar) langsung ke client.</li>
+                    <li>Menjalankan aplikasi server side (misalnya PHP, Python, Node.js) untuk memproses permintaan dinamis.</li>
+                    <li>Mengelola koneksi dan protokol komunikasi antara client dan server.</li>
+                    <li>Membersihkan berbagai cache yang terdapat pada penyimpanan serta semua dokumen yang tidak terpakai lagi.</li>
+                    <li>Melakukan pemeriksaan terhadap sistem security yang berasal dari permintaan HTTP berdasarkan request klien atau web browser.</li>
+                    <li>Menyediakan data berdasarkan request atau permintaan yang masuk agar dapat menjamin keamanan sistem yang berjalan dengan lancar.</li>
+                </ul>
+
+                <h3>Contoh Web Server Populer</h3>
+
+                <ul>
+                    <li><strong>Apache HTTP Server</strong>: Salah satu web server tertua dan paling banyak dipakai.</li>
+                    <p>Web server yang populer dan paling banyak digunakan kebanyakan orang, yaitu jenis Apache. Pada awalnya Apache didesain guna mendukung penuh sistem operasi UNIX. Selain cukup mudah dalam implementasinya, Apache juga memiliki beberapa program pendukung sehingga memberinkan layanan yang lengkap, seperti PHP, SSI dan kontrol akses.</p>
+                    <ul>
+                        <li><strong>PHP (Personal Home Page atau PHP Hypertext Processor)</strong> :
+                            Program semacam CGI, berfungsi memproses teks yang bekerja di server. Apache sangat mendukung PHP dengan menempatkannya sebagai salah satu modulnya (mod_php). Hal tersebut membuat PHP bekerja lebih baik.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>SSI (Server Side Include)</strong> :
+                            Perintah yang bisa disertakan dalam bekas HTML. Kemudian ia dapat diproses oleh web server ketika pengguna mengaksesnya.</li>
+                    </ul>
+                    <ul>
+                        <li><strong> Access Control</strong> :
+                           Kontrol Akses dapat dijalankan berdasarkan nama host atau nomor IP CGI (Common Gateway Interface). Lalu yang paling umum untuk digunakan adalah perl (Practical Extraction and Report Language), disupport oleh Apache dengan menempatkannya sebagai modul (mod_perl).</li>
+                    </ul>
+                    <li><strong>Nginx</strong>: Web server dan reverse proxy berperforma tinggi, populer sebagai load balancer.</li>
+                    <li><strong>Microsoft IIS</strong>: Web server dari Microsoft, biasanya digunakan dalam lingkungan Windows Server.</li>
+                </ul>
+
+                <h3>Cara Kerja Web Server dengan Server Side Code</h3>
+
+                <p>Web server dapat melayani permintaan untuk file statis atau memproses kode server side.</p>
+                <ol>
+                    <li>Client membuat permintaan HTTP ke web server.</li>
+                    <li>Jika permintaan untuk file statis (misalnya halaman HTML), web server mengirim file tersebut langsung.</li>
+                    <li>Jika permintaan untuk file dinamis (misalnya PHP, atau endpoint API), web server meneruskan permintaan tersebut ke interpreter/server side app.</li>
+                    <li>Server side program memproses permintaan dan memberikan hasil ke web server.</li>
+                    <li>Web server mengirimkan hasil ke client.</li>
+                </ol>
+
+                <h3>Contoh Konfigurasi Server Side dengan Apache dan PHP</h3>
+
+                <p>Misalnya kita ingin melayani file PHP menggunakan Apache, Apache akan memanggil PHP interpreter untuk memproses file PHP dan mengirim hasil HTML ke browser.</p>
+
+                <p>Contoh kode PHP sederhana (file <code>index.php</code>):</p>
+
+                <pre><code>&lt;?php
+                echo "&lt;h1&gt;Halo dari PHP Server Side!&lt;/h1&gt;";
+                ?&gt;
+                </code></pre>
+
+                <p>Jika file ini berada di folder web server dan dikonfigurasi Apache dengan mod_php, maka saat diakses, server akan menjalankan PHP dan mengirim hasilnya ke client.</p>
+
+                <h3>Ringkasan</h3>
+
+                <ul>
+                    <li><strong>Bahasa pemrograman server side</strong> adalah bahasa yang digunakan untuk menulis kode yang berjalan di server sebelum dikirim ke client.</li>
+                    <li><strong>Pemrograman server side</strong> mencakup pengolahan data, interaksi dengan database, dan logika aplikasi yang dijalankan di server.</li>
+                    <li><strong>Web server</strong> adalah perangkat lunak yang bertugas menerima permintaan client dan mengirimkan konten, baik statis maupun dinamis.</li>
+                    <li>Contoh populer server side languages: PHP, Python, Node.js, Ruby, Java.</li>
+                    <li>Contoh web server populer: Apache, Nginx, IIS.</li>
+                </ul>
+
+                <br>
+                <h1>Bahasa Pemrograman PHP</h1>
+                <p>Kali ini kita akan belajar bahasa PHP sebagai pemrograman server. PHP (Hypertext Preprocessor) adalah bahasa pemrograman server side yang banyak digunakan untuk membangun aplikasi web dinamis. PHP berjalan di server dan menghasilkan halaman HTML yang dikirimkan ke client (browser).</p>
+                <p>PHP dirancang untuk kemudahan pembuatan halaman web dinamis, dan dapat disisipkan langsung ke dalam kode HTML. PHP sangat populer karena mudah dipelajari, bersifat open-source, dan memiliki banyak sumber daya serta komunitas.</p>
+                <h3>1. Dasar PHP</h3>
+                <p>Tag pembuka PHP adalah <code>&lt;?php</code> dan tag penutup <code>?&gt;</code>. Semua kode PHP ditulis di antara tag ini.</p>
+
+                <pre><code>&lt;?php
+                // Menampilkan teks
+                echo "Halo Dunia!";
+                ?&gt;
+                </code></pre>
+
+                <h3>2. Variabel dan Tipe Data</h3>
+                <p>Variabel PHP diawali dengan tanda <code>$</code> diikuti nama variabel. PHP mendukung tipe data seperti string, integer, float, boolean, array, dan objek.</p>
+
+                <pre><code>&lt;?php
+                    $nama = "Andi";       // String
+                    $umur = 25;           // Integer
+                    $tinggi = 170.5;      // Float
+                    $menikah = false;     // Boolean
+                    ?&gt;
+                </code></pre>
+
+                <h3>3. Struktur Kontrol</h3>
+
+                <h4>3.1 Percabangan (if-else)</h4>
+                <pre><code>&lt;?php
+                    if ($umur &gt;= 18) {
+                        echo "Anda sudah dewasa.";
+                    } else {
+                        echo "Anda masih anak-anak.";
+                    }
+                    ?&gt;
+                </code></pre>
+
+                <h4>3.2 Switch</h4>
+                <pre><code>&lt;?php
+                    $warna = "merah";
+
+                    switch ($warna) {
+                        case "merah":
+                            echo "Warna merah dipilih.";
+                            break;
+                        case "biru":
+                            echo "Warna biru dipilih.";
+                            break;
+                        default:
+                            echo "Warna tidak diketahui.";
+                    }
+                    ?&gt;
+                </code></pre>
+
+                <h4>3.3 Perulangan</h4>
+
+                <p><strong>While loop</strong></p>
+                <pre><code>&lt;?php
+                    $i = 1;
+                    while ($i &lt;= 5) {
+                        echo "Angka: $i &lt;br&gt;";
+                        $i++;
+                    }
+                    ?&gt;
+                </code></pre>
+
+                <p><strong>For loop</strong></p>
+                <pre><code>&lt;?php
+                    for ($i = 1; $i &lt;= 5; $i++) {
+                        echo "Angka: $i &lt;br&gt;";
+                    }
+                    ?&gt;
+                    </code></pre>
+
+                    <h3>4. Fungsi</h3>
+                    <p>Fungsi adalah blok kode yang dapat dipanggil berulang kali. Contoh membuat dan menggunakan fungsi di PHP:</p>
+
+                    <pre><code>&lt;?php
+                    function sapa($nama) {
+                        return "Halo, " . $nama . "!";
+                    }
+
+                    echo sapa("Budi"); // Output: Halo, Budi!
+                    ?&gt;
+                </code></pre>
+
+                <h3>5. Contoh Kode PHP Lengkap: Halaman Web Dinamis</h3>
+
+                <p>Di bawah ini contoh file PHP yang menampilkan halaman HTML dengan penggunaan variabel dan kontrol:</p>
+
+                <pre><code>&lt;!DOCTYPE html&gt;
+                    &lt;html lang="id"&gt;
+                    &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                    &lt;title&gt;Contoh Halaman PHP&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+
+                    &lt;?php
+                    $nama = "Sari";
+                    $umur = 22;
+
+                    echo "&lt;h1&gt;Selamat datang, $nama!&lt;/h1&gt;";
+
+                    if ($umur &gt;= 18) {
+                        echo "&lt;p&gt;Anda sudah dewasa.&lt;/p&gt;";
+                    } else {
+                        echo "&lt;p&gt;Anda masih anak-anak.&lt;/p&gt;";
+                    }
+                    ?&gt;
+
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+
+                <h3>6. Cara Menjalankan File PHP</h3>
+                <ul>
+                    <li>PHP harus dijalankan pada server yang mendukung PHP, seperti Apache, Nginx, atau dapat menggunakan server built-in PHP.</li>
+                    <li>Untuk menjalankan local, Anda bisa instal paket seperti XAMPP, WAMP, LAMP, atau gunakan PHP built-in server dengan perintah: <code>php -S localhost:8000</code> dari terminal di direktori file PHP Anda.</li>
+                    <li>Buka browser dan akses URL sesuai alamat server (misal: <code>http://localhost:8000/namafile.php</code>).</li>
+                </ul>
+                <h2 class="mb-4 animated slideInDown">PHP dan MySQL</h2>
+            <p>PHP adalah bahasa pemrograman server side yang banyak digunakan untuk pengembangan aplikasi web dinamis. Sedangkan MySQL merupakan sistem manajemen basis data relasional (RDBMS) yang populer dan handal untuk menyimpan data secara terstruktur. Kombinasi PHP dan MySQL memungkinkan pengembang membuat aplikasi yang interaktif dan mampu mengelola data dengan efisien.</p>
+
+            <h2 class="mb-4 animated slideInDown">Koneksi PHP ke MySQL</h2>
+            <p>Untuk menghubungkan PHP dengan MySQL, ada dua ekstensi utama yang dapat digunakan: <strong>mysqli</strong> dan <strong>PDO</strong>. Contoh berikut menggunakan <code>mysqli</code> untuk melakukan koneksi dan mengecek keberhasilan koneksi ke database:</p>
+            <pre style="background:#f8f9fa;border:1px solid #ddd;padding:10px;"><code>&lt;?php
+                // Informasi koneksi database
+                $host = "localhost";
+                $user = "root";
+                $password = "";
+                $database = "contoh_db";
+
+                // Membuat koneksi
+                $conn = new mysqli($host, $user, $password, $database);
+
+                // Cek koneksi
+                if ($conn->connect_error) {
+                    die("Koneksi gagal: " . $conn->connect_error);
+                }
+                echo "Koneksi berhasil!";
+                ?&gt;</code>
+            </pre>
+
+            <h2 class="mb-4 animated slideInDown">Operasi CRUD dengan PHP dan MySQL</h2>
+            <p>CRUD adalah singkatan dari <em>Create, Read, Update, dan Delete</em> yang merupakan operasi dasar dalam pengelolaan data di database. Berikut contoh penerapan operasi CRUD sederhana menggunakan PHP dan MySQLi:</p>
+
+            <h3>Create (Tambah Data)</h3>
+            <pre style="background:#f8f9fa;border:1px solid #ddd;padding:10px;"><code>&lt;?php
+                // Menambah data ke tabel 'users'
+                $name = "Budi";
+                $email = "budi@example.com";
+
+                $sql = "INSERT INTO users (name, email) VALUES ('$name', '$email')";
+                if ($conn->query($sql) === TRUE) {
+                    echo "Data berhasil ditambahkan";
+                } else {
+                    echo "Error: " . $conn->error;
+                }
+                ?&gt;</code>
+            </pre>
+
+            <h3>Read (Ambil Data)</h3>
+            <pre style="background:#f8f9fa;border:1px solid #ddd;padding:10px;"><code>&lt;?php
+                // Mengambil data dari tabel 'users'
+                $sql = "SELECT * FROM users";
+                $result = $conn->query($sql);
+
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                        echo "ID: " . $row["id"]. " - Nama: " . $row["name"]. " - Email: " . $row["email"]. "&lt;br&gt;";
+                    }
+                } else {
+                    echo "0 hasil";
+                }
+                ?&gt;</code>
+            </pre>
+
+            <h3>Update (Ubah Data)</h3>
+            <pre style="background:#f8f9fa;border:1px solid #ddd;padding:10px;"><code>&lt;?php
+                // Mengubah data dengan id tertentu
+                $id = 1;
+                $newEmail = "budi_baru@example.com";
+
+                $sql = "UPDATE users SET email='$newEmail' WHERE id=$id";
+                if ($conn->query($sql) === TRUE) {
+                    echo "Data berhasil diupdate";
+                } else {
+                    echo "Error updating record: " . $conn->error;
+                }
+                ?&gt;</code>
+            </pre>
+
+            <h3>Delete (Hapus Data)</h3>
+            <pre style="background:#f8f9fa;border:1px solid #ddd;padding:10px;"><code>&lt;?php
+                // Menghapus data dengan id tertentu
+                $id = 1;
+
+                $sql = "DELETE FROM users WHERE id=$id";
+                if ($conn->query($sql) === TRUE) {
+                    echo "Data berhasil dihapus";
+                } else {
+                    echo "Error deleting record: " . $conn->error;
+                }
+                ?&gt;</code>
+            </pre>
+
+            <h2 class="mb-4 animated slideInDown">Keamanan pada PHP dan MySQL</h2>
+            <p>Salah satu perhatian penting dalam menggunakan PHP dan MySQL adalah keamanan, terutama untuk menghindari serangan SQL Injection. Cara yang direkomendasikan adalah menggunakan <strong>Prepared Statements</strong> yang memisahkan data dan perintah SQL sehingga data yang dimasukkan tidak bisa mengubah struktur query.</p>
+            <p>Contoh penggunaan prepared statement untuk menambahkan data:</p>
+            <pre style="background:#f8f9fa;border:1px solid #ddd;padding:10px;"><code>&lt;?php
+                // Menggunakan prepared statement untuk insert data
+                $stmt = $conn->prepare("INSERT INTO users (name, email) VALUES (?, ?)");
+                $stmt->bind_param("ss", $name, $email);
+
+                $name = "Andi";
+                $email = "andi@example.com";
+                $stmt->execute();
+
+                echo "Data berhasil ditambahkan dengan prepared statement";
+
+                $stmt->close();
+                ?&gt;</code>
+            </pre>
+
+            <h2 class="mb-4 animated slideInDown">Tips </h2>
+            <ul>
+                <li>Selalu gunakan <strong>prepared statements</strong> untuk operasi database yang menerima input pengguna.</li>
+                <li>Rancang struktur database dengan indeks yang tepat untuk optimasi kinerja query.</li>
+                <li>Lakukan validasi dan sanitasi input pada sisi server untuk menjaga keamanan data.</li>
+                <li>Backup database secara berkala untuk menghindari kehilangan data.</li>
+                <li>Gunakan error handling yang tepat untuk memudahkan debugging dan meningkatkan stabilitas aplikasi.</li>
+            </ul>
+                <h3>Referensi dan Sumber Belajar</h3>
+               
+                <h3>Referensi dan Sumber Belajar</h3>
+                <ul>
+                    <li><a href="https://nodejs.org/en/docs/" target="_blank" rel="noopener">Node.js Official Documentation</a></li>
+                    <li><a href="https://expressjs.com/" target="_blank" rel="noopener">Express Framework</a></li>
+                    <li><a href="https://www.php.net/manual/en/index.php" target="_blank" rel="noopener">PHP Manual</a></li>
+                    <li><a href="https://www.python.org/doc/" target="_blank" rel="noopener">Python Documentation</a></li>
+                    <li><a href="https://httpd.apache.org/docs/" target="_blank" rel="noopener">Apache HTTP Server Documentation</a></li>
+                    <li><a href="https://nginx.org/en/docs/" target="_blank" rel="noopener">Nginx Documentation</a></li>
+                    <li><a href="https://www.php.net/manual/id/" target="_blank" rel="noopener">PHP Manual Bahasa Indonesia</a></li>
+                    <li><a href="https://www.w3schools.com/php/" target="_blank" rel="noopener">W3Schools PHP Tutorial</a></li>
+                    <li><a href="https://www.tutorialspoint.com/php/" target="_blank" rel="noopener">TutorialsPoint PHP</a></li>
+                    <li><a href="https://www.freecodecamp.org/news/php-tutorial-for-beginners/" target="_blank" rel="noopener">FreeCodeCamp PHP Tutorial</a></li>  
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Materi End -->
+<!-- Materi Start -->
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+
+            
+            
+        </div>
+    </div>
+</div>
+<!-- Materi End -->
+
+
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Bagian 1: Quick Link -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="komputer.html">Konsep Komputer</a>
+                    <a class="btn btn-link" href="sistem.html">Sistem Informasi</a>
+                    <a class="btn btn-link" href="mobile.html">Mobile Learning</a>
+                    <a class="btn btn-link" href="superhighway.html">Information Superhighway</a>
+                    <a class="btn btn-link" href="etika.html">Etika Teknologi Informasi</a>
+                </div>
+                <!-- Bagian 2: Contact -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>JL AR HAKIM</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+62555511321</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Bagian 3: Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Jika terdapat Kendala Bisa Menghubungi Kami.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Baris Bawah -->
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Kelompok 6</a>, All Right Reserved.
+                        
+                        Designed By Kelompok 6
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

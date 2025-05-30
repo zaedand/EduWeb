@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Materi Lengkap Pemrograman PHP - Bahasa Pemrograman Server Side</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 900px;
+    margin: 30px auto;
+    color: #222;
+    background: #f9f9f9;
+    line-height: 1.6;
+  }
+  h1, h2, h3 {
+    color: #004d99;
+    margin-top: 1.5em;
+  }
+  pre {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 15px;
+    overflow-x: auto;
+    border-radius: 5px;
+  }
+  code {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  ul {
+    margin-left: 20px;
+  }
+  .note {
+    background: #e7f3ff;
+    border-left: 6px solid #2196F3;
+    padding: 15px;
+    margin: 20px 0;
+  }
+  a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  hr {
+    margin: 3em 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+</style>
+</head>
+<body>
+<h1>Materi Lengkap Pemrograman PHP</h1>
+
+<p>PHP (Hypertext Preprocessor) adalah bahasa pemrograman server side yang banyak digunakan untuk membangun aplikasi web dinamis. PHP berjalan di server dan menghasilkan halaman HTML yang dikirimkan ke client (browser).</p>
+
+<hr />
+
+<h2>1. Pengenalan PHP</h2>
+<p>PHP dirancang untuk kemudahan pembuatan halaman web dinamis, dan dapat disisipkan langsung ke dalam kode HTML. PHP sangat populer karena mudah dipelajari, bersifat open-source, dan memiliki banyak sumber daya serta komunitas.</p>
+
+<h2>2. Sintaks Dasar PHP</h2>
+<p>Tag pembuka PHP adalah <code>&lt;?php</code> dan tag penutup <code>?&gt;</code>. Semua kode PHP ditulis di antara tag ini.</p>
+
+<pre><code>&lt;?php
+// Menampilkan teks
+echo "Halo Dunia!";
+?&gt;
+</code></pre>
+
+<h2>3. Variabel dan Tipe Data</h2>
+<p>Variabel PHP diawali dengan tanda <code>$</code> diikuti nama variabel. PHP mendukung tipe data seperti string, integer, float, boolean, array, dan objek.</p>
+
+<pre><code>&lt;?php
+$nama = "Andi";       // String
+$umur = 25;           // Integer
+$tinggi = 170.5;      // Float
+$menikah = false;     // Boolean
+?&gt;
+</code></pre>
+
+<h2>4. Struktur Kontrol</h2>
+
+<h3>4.1 Percabangan (if-else)</h3>
+<pre><code>&lt;?php
+if ($umur &gt;= 18) {
+    echo "Anda sudah dewasa.";
+} else {
+    echo "Anda masih anak-anak.";
+}
+?&gt;
+</code></pre>
+
+<h3>4.2 Switch</h3>
+<pre><code>&lt;?php
+$warna = "merah";
+
+switch ($warna) {
+    case "merah":
+        echo "Warna merah dipilih.";
+        break;
+    case "biru":
+        echo "Warna biru dipilih.";
+        break;
+    default:
+        echo "Warna tidak diketahui.";
+}
+?&gt;
+</code></pre>
+
+<h3>4.3 Perulangan</h3>
+
+<p><strong>While loop</strong></p>
+<pre><code>&lt;?php
+$i = 1;
+while ($i &lt;= 5) {
+    echo "Angka: $i &lt;br&gt;";
+    $i++;
+}
+?&gt;
+</code></pre>
+
+<p><strong>For loop</strong></p>
+<pre><code>&lt;?php
+for ($i = 1; $i &lt;= 5; $i++) {
+    echo "Angka: $i &lt;br&gt;";
+}
+?&gt;
+</code></pre>
+
+<h2>5. Fungsi</h2>
+<p>Fungsi adalah blok kode yang dapat dipanggil berulang kali. Contoh membuat dan menggunakan fungsi di PHP:</p>
+
+<pre><code>&lt;?php
+function sapa($nama) {
+    return "Halo, " . $nama . "!";
+}
+
+echo sapa("Budi"); // Output: Halo, Budi!
+?&gt;
+</code></pre>
+
+<h2>6. Contoh Kode PHP Lengkap: Halaman Web Dinamis</h2>
+
+<p>Di bawah ini contoh file PHP yang menampilkan halaman HTML dengan penggunaan variabel dan kontrol:</p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;Contoh Halaman PHP&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;?php
+$nama = "Sari";
+$umur = 22;
+
+echo "&lt;h1&gt;Selamat datang, $nama!&lt;/h1&gt;";
+
+if ($umur &gt;= 18) {
+    echo "&lt;p&gt;Anda sudah dewasa.&lt;/p&gt;";
+} else {
+    echo "&lt;p&gt;Anda masih anak-anak.&lt;/p&gt;";
+}
+?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>7. Cara Menjalankan File PHP</h2>
+<ul>
+  <li>PHP harus dijalankan pada server yang mendukung PHP, seperti Apache, Nginx, atau dapat menggunakan server built-in PHP.</li>
+  <li>Untuk menjalankan local, Anda bisa instal paket seperti XAMPP, WAMP, LAMP, atau gunakan PHP built-in server dengan perintah: <code>php -S localhost:8000</code> dari terminal di direktori file PHP Anda.</li>
+  <li>Buka browser dan akses URL sesuai alamat server (misal: <code>http://localhost:8000/namafile.php</code>).</li>
+</ul>
+
+<h2>8. Referensi dan Sumber Belajar</h2>
+<ul>
+  <li><a href="https://www.php.net/manual/id/" target="_blank" rel="noopener">PHP Manual Bahasa Indonesia</a></li>
+  <li><a href="https://www.w3schools.com/php/" target="_blank" rel="noopener">W3Schools PHP Tutorial</a></li>
+  <li><a href="https://www.tutorialspoint.com/php/" target="_blank" rel="noopener">TutorialsPoint PHP</a></li>
+  <li><a href="https://www.freecodecamp.org/news/php-tutorial-for-beginners/" target="_blank" rel="noopener">FreeCodeCamp PHP Tutorial</a></li>
+</ul>
+
+</body>
+</html>
